@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Admin Panel</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <header>
+
+    </header> -->
+    <div class="modal-full" id="modal">
+        <div class="modal-container">
+            <div class="titlewithClose">
+                <h3 id="movieName">
+                    MovieName
+                </h3>
+                <div class="close" id="closeModal">
+                    <i class="fa-solid fa-circle-xmark" title="close"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="movie-details">
+                <div class="left">
+                    <img src="" alt="image not load check internet" id="moviePoster">
+                </div>
+                <div class="right">
+                    <div class="movieName info">
+                        <h4 class="title">Movie:</h4>
+                        <p id="mName">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="actorName info">
+                        <h4 class="title">Actors:</h4>
+                        <p id="actorsName">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="duration info">
+                        <h4 class="title">Duration:</h4>
+                        <p id="duration">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor, deleniti sunt illo vel id aliquid nam eius quod ex?</p>
+                    </div>
+                    <div class="releaseDate info">
+                        <h4 class="title">Release Date:</h4>
+                        <p id="releaseDate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor, deleniti sunt illo vel id aliquid nam eius quod ex?</p>
+                    </div>
+                    <div class="imdbRating info">
+                        <h4 class="title">IMDb Ratings:</h4>
+                        <p id="imdbRating">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor, deleniti sunt illo vel id aliquid nam eius quod ex?</p>
+                    </div>
+                    <div class="genres info">
+                        <h4 class="title">Genres:</h4>
+                        <p id="genres">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor, deleniti sunt illo vel id aliquid nam eius quod ex?</p>
+                    </div>
+                    <div class="movie-summary info">
+                        <h4 class="title">Summary:</h4>
+                        <p id="movie-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quaerat fugiat eligendi? Consequuntur dicta velit, tempore error fugiat animi molestiae commodi veritatis atque ad? Consequuntur beatae possimus iusto exercitationem vero aut cum iste veritatis quia magni, reprehenderit ipsum, aperiam repellendus!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="main">
+            <div class="container">
+                <header>
+                    <div class="header-title">
+                        <h3>
+                            Movies Details
+                        </h3>
+                    </div>
+                    <div class="add-movie-btn">
+                        <button id="addMovieBtn">Add New Movie</button>
+                    </div>
+                </header>
+                <section class="table-section">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sr.</th>
+                                <th>Movie Name</th>
+                                <th>Release Date</th>
+                                <th>Genres</th>
+                                <th>Duration</th>
+                                <th>IMDB Ratings</th>
+                                <!-- <th>Content Rating</th> -->
+                                 <th>Actions</th><!--8 th -->
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+    
+    
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
