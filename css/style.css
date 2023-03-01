@@ -54,7 +54,7 @@ main .container .table-section table{
     padding: 7px 10px;
     border: 1px solid lightblue;
     border-collapse: collapse;
-    text-align: left;
+    text-align: center;
 }
 main .container .table-section table td, th{
     padding: 7px 10px;
@@ -80,7 +80,7 @@ table tr:nth-child(even){
     color: rgb(238, 174, 85);
     cursor: pointer;
 }
-.fa-pen-to-square{
+.fa-pen-fancy{
     color: rgb(76, 150, 224);
     cursor: pointer;
 }
@@ -155,7 +155,7 @@ hr{
     justify-content: left;
     align-items: flex-start;
     flex-direction: column;
-    gap: 8px;
+    gap: 20px;
     overflow-y: scroll;
 }
 .movie-details .right .movie-summary{
@@ -176,4 +176,101 @@ hr{
     width: 80%;
     padding-left: 10px;
     font-size: 16px;
+}
+
+/* add movie modal */
+
+.addMovieModal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.addMovieModal .add_movie_container{
+    width: 80%;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.addMovieModal .add_movie_container .add_movie_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    padding: 20px 50px 0;
+}
+.addMovieModal .add_movie_container hr{
+    width: 100%;
+    background-color: black;
+}
+.addMovieModal .add_movie_container .add_movie_form{
+    width: 100%;
+    height: 90vh;
+    /* background-color: aqua; */
+    padding: 0 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.addMovieModal .add_movie_container .add_movie_form form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 30px;
+}
+.addMovieModal .add_movie_container .add_movie_form input{
+    width: 44%;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: .5px solid lightgrey;
+    outline: .5px solid lightgrey;
+}
+.addMovieModal .add_movie_container .add_movie_form input:focus{
+    background-color: antiquewhite;
+}
+.full_width{
+    width: 100%!important;
+    
+}
+textarea{
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    outline: .5px solid lightgrey;
+    padding: 20px;
+}
+textarea:focus{
+    background-color: antiquewhite;
+}
+.addMovieModal .add_movie_container .add_movie_form form button{
+    padding: 7px 40px;
+    outline: 0;
+    border: 0;
+    background-color: rgb(238, 219, 19);;
+    border-radius: 10px;
+    font-weight: 600;
+}
+button{
+    transition: all .3s ease-in-out;
+}
+button:hover{
+    transform: scale(.8);
+}
+.fa-window-close{
+    transform: scale(1.5);
+    transition: all .3s ease-in-out;
+}
+.fa-window-close:hover{
+    transform: scale(1.7)!important;
+    transform: rotate(180deg)!important;
 }
