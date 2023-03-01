@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>API Calls</title>
+</head>
+<style>
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+ 
+    button {
+        padding: 10px 30px;
+        border: 0;
+        outline: 0;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        background-color: rgb(83, 50, 50);
+    }
+</style>
+
+<body>
+    <h1>View Output In Console</h1>
+    <div class="btn-container">
+        <button id="button1"> Click For API 1</button>
+        <button id="button2"> Click For API 2</button>
+        <button id="button3"> Click For API 3</button>
+        <button id="button4"> Click For API 4</button>
+        <button id="button5"> Click For API 5</button>
+    </div>
+
+    <script>
+        const button1 = document.querySelector('#button1');
+        const button2 = document.querySelector('#button2');
+        const button3 = document.querySelector('#button3');
+        const button4 = document.querySelector('#button4');
+        const button5 = document.querySelector('#button5');
+
+        button1.addEventListener('click', () => {
+            fetch('https://jsonplaceholder.typicode.com/posts/1')
+                .then(response => response.json())
+                .then(data => console.log(data));
+        });
+
+        button2.addEventListener('click', () => {
+            fetch('https://jsonplaceholder.typicode.com/comments/1')
+                .then(response => response.json())
+                .then(data => console.log(data));
+        });
+
+        button3.addEventListener('click', () => {
+            fetch('https://jsonplaceholder.typicode.com/albums/1')
+                .then(response => response.json())
+                .then(data => console.log(data));
+        });
+
+        button4.addEventListener('click', () => {
+            fetch('https://jsonplaceholder.typicode.com/photos/1')
+                .then(response => response.json())
+                .then(data => console.log(data));
+        });
+
+        button5.addEventListener('click', () => {
+            fetch('https://jsonplaceholder.typicode.com/todos/1')
+                .then(response => response.json())
+                .then(data => console.log(data));
+        });
+    </script>
+</body>
+
+</html>
